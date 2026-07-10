@@ -1,0 +1,40 @@
+{
+	"name": "Paramsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DES_GIT_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pfliename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().pfliename",
+					"type": "Expression"
+				},
+				"fileSystem": "destination"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SIC_Code",
+				"type": "String"
+			},
+			{
+				"name": "Description",
+				"type": "String"
+			}
+		]
+	}
+}
