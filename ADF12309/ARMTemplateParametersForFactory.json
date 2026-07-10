@@ -5,10 +5,25 @@
 		"factoryName": {
 			"value": "ADF12309"
 		},
+		"LS_DES_GIT_ADLS_accountKey": {
+			"value": ""
+		},
 		"LS_GM_accountKey": {
 			"value": ""
 		},
+		"LS__destination_accountKey": {
+			"value": ""
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com"
+		},
+		"LS_DES_GIT_ADLS_properties_typeProperties_url": {
+			"value": "https://datasource999.dfs.core.windows.net/"
+		},
 		"LS_GM_properties_typeProperties_url": {
+			"value": "https://datasource999.dfs.core.windows.net/"
+		},
+		"LS__destination_properties_typeProperties_url": {
 			"value": "https://datasource999.dfs.core.windows.net/"
 		}
 	}
